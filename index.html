@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        {{name}}
+    </div>
+    <script type="text/javascript" src="src/view.js"></script>
+    <script type="text/javascript" src="src/main.js"></script>
+    <script type="text/javascript">
+        new SimpleVue({
+            el: '#app',
+            data: {
+                name: 'test'
+            }
+        })
+    </script>
+</body>
+</html>
