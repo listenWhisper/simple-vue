@@ -7,7 +7,10 @@
 </head>
 <body>
     <div id="app">
-        {{name}}
+        <span>{{name}}</span>
+        <input type="text" v-model="name">
+        <input type="text" v-bind:value="name">
+        <button v-on:click="test">click me!</button>
     </div>
     <script type="text/javascript" src="src/view.js"></script>
     <script type="text/javascript" src="src/main.js"></script>
@@ -16,7 +19,12 @@
             el: '#app',
             data: {
                 name: 'test'
-            }
+            },
+            methods: {
+                test(){
+                    console.log('123233224442244242')
+                }
+            },
         })
     </script>
 </body>
